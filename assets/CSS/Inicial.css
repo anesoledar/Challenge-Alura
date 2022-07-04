@@ -1,0 +1,117 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.inicial {
+    background-image: url(../img/inicial/Forma\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: 98vw;
+    background-color: #3772FF;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    height: 10em;
+    justify-content:space-around;
+    margin-left: 1.5em;
+    width: 40vw;
+
+}
+header .inicial__home {
+    background: #36D6AD;
+    border: 1px solid #36D6AD;
+   
+}
+
+header .inicial__contato {
+    
+    background-color: #36D6AD;
+    border: 1px solid #36D6AD; 
+  
+}
+
+.inicial__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inicial__logo img {
+    margin:3em auto;
+}
+
+.inicial__conteudo {
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    padding:auto;
+    color: #fff;
+    background-image: url(../img/inicial/Forma\ 2.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+
+}
+
+.inicial__conteudo h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 24px;
+}
+
+.inicial__conteudo p {
+    width: 65vw;
+    height: 6em;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+.inicial__conteudo-botao {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 7em;
+    justify-content: space-between;
+    margin: 8px auto;
+    width: 50vw;
+
+}
+.inicial__conteudo-botao button  {
+    background-color: #FC7071;
+    border: #FC7071;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 16px ;
+    font-weight: 600;
+    height: 3em;
+    width: 45vw;
+    
+}
+
+.inicial__decoracao {
+    width: 100vw;
+    background-image: url(../img/inicial/Ilustração\ 1.svg);
+    background-repeat: no-repeat;
+    background-position-y: 4vh;
+    background-position-x: center;
+    height: 20em;
+
+
+}
+
+footer {
+    align-items: center;
+    background-color: #36D6AD; 
+    display: flex;
+    height: 100px;
+    justify-content: center;
+  }
+
+footer p {
+    color: #fff;
+}
