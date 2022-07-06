@@ -15,24 +15,27 @@ body{
     background-size: 90vw;
     top: 0;
     position: absolute;
-    height: 300px;
+    height: 600px;
     width:100%;
+    
 }
 
 header {
     align-items: center;
     display: flex;
     height: 15vh;
-    justify-content:space-around;
-    margin-left: 10%;
-    width: 40vw;
+    justify-content:left;
+    width: 40%;
     position: absolute;
+    z-index: 2;
     top: 0;
 }
 
 .header__ico {
-    background: #36D6AD;
-    border: 1px solid #36D6AD;
+    background: none;
+    border: none;
+    padding: 6vw 5vw 0 5vw;
+
   
 }
 
@@ -76,10 +79,17 @@ footer p {
     color: #fff;
 }
 
-input {
-    width: 80%;
+.input {
     border-radius: 6px;
+    border: none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    width: 80%;
+    height: 3em;
 }
+
+.input::placeholder {
+    color: #BCBCBC;;
+  }
 
 .titulo-azul {
     color:#3772FF;
@@ -87,6 +97,15 @@ input {
     font-size: 16px;
 }
 
+@media screen and (min-width: 650px) {
+    .forma__top {
+        background-size: 70vw;  
+        
+    }
+
+
+
+    }
 /* CSS da página Inicial */
 
 .inicial__body { 
@@ -107,6 +126,7 @@ input {
     background-image: url(../img/Forma-direita.svg);
     background-repeat: no-repeat;
     background-position-x: right;
+    background-position-y: -7%;
     position: absolute;   
 }
 
@@ -146,7 +166,25 @@ input {
     background-position-y: 110% ;
     height: 600px;
 }
+@media screen and (min-width: 650px) {
 
+    .inicial__conteudo p {
+        width: 47vw;
+        font-size: 18px;
+    }
+    .inicial__conteudo h3 {
+        font-size:28px ;
+    }
+    .inicial__decoracao {
+        height: 650px;
+        background-position-x: 45%;
+        background-position-y: 105% ;
+    }
+    .inicial__conteudo {
+        height: 600px;
+    }
+    
+}
 
 /* CSS comum ás páginas Cadastro e Login */
 
@@ -186,22 +224,32 @@ input {
 
 .cadastro input {
     background-color: #F7F7F7;
-    border: none;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
     height: 3em;
     text-align: center;      
 }
 
-.cadastro input::placeholder {
-    color: #BCBCBC;;
-  }
 
 .botao__comum {
     width: 10em;
     padding: 0.5em 0 0.5em 0;
     margin: 20px;   
 }
+@media screen and (min-width: 650px) {
+    .input {
+        width: 50vw;
+    }
 
+    .cadastro {
+        background-image: url(../img/Forma-direita.svg);
+        background-position: right;
+        background-position-y: -2vh;
+        background-size: 12vw; 
+
+    }
+    .chamada__cadastroLogin {
+     width: 68%;
+    }
+}
 
 /* CSS página Login */
 
@@ -224,12 +272,13 @@ input {
 }
 
 /* CSS da página Home */
-.chamada__home {
+.chamada__sem__logo {
     width: 80%;
     margin: 40% auto 8% auto;
     font-size: 16px;
     color:#3772FF;
     text-align: center;
+   
 }
 
 .sessao__de__cards {
@@ -237,6 +286,8 @@ input {
     align-items: center;
     flex-direction: column;
     width: 100%;
+   
+
 }
 
 .cartao {
@@ -246,6 +297,7 @@ input {
     margin: 10px 0 10px 0;
     padding: 10px 0;
     width: 100%;
+ 
 
 }
 
@@ -253,6 +305,8 @@ input {
     display: grid;
     color: #737380;
     padding: 10px;
+
+
    
 }
 
@@ -263,7 +317,7 @@ input {
 .cartao__img {
     width: 40vw;
     padding: 10%;
-    display: inline;
+    
 }
 
 .cartao__texto {
@@ -272,12 +326,132 @@ input {
 
 .cartao__falar__com {
     font-size: 10px;
-    display: inline-block;
-    align-self: center;
+    display: flex;
+    align-items:flex-start;
+
+  
 }
 .cartao__botao__mensagem {
     display: inline;
     border: none;
     background-color: #F7F7F7;
+    padding-right: 5px;
 }
 
+/* Comum às páginas Home, Mensagem e Perfil */
+
+.icone__perfil {
+   right: 10vw;
+   top: 3vh;
+   position: absolute;
+   
+}
+
+/* Comum às páginas Mensagem e Perfil */
+
+.container__mensagem {
+    background-color: #F7F7F7;
+    border-radius: 6px;  
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 680px;
+    margin: 0 auto 50px auto;
+    padding: 2%;
+    width: 80%;  
+
+}
+.mensagem__input {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    margin: 5% auto 5% auto; 
+    mix-blend-mode: normal;
+    padding-left: 5%;
+    text-align: start;
+    width: 85%;
+    }
+
+.container__mensagem input::placeholder{
+    color: #BCBCBC;
+}
+
+.mensagem  {
+    color: #BCBCBC;
+    height: 12em;
+    margin: 5% auto 5% auto;
+    padding: 5%;
+    text-align: start;
+    width: 85%;
+  }
+
+
+.alinha__botao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.enviar__mensagem button {
+    margin: auto;}
+
+    @media screen and (min-width: 650px) {
+        .forma__direita{
+        top: 25vh;
+            width: 100%;
+            height: 900px;
+        position:absolute;
+        background-image: url(../img/Forma-direita.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 15vw;
+        
+       }
+       
+        
+        .container__mensagem {
+            width: 60%;
+           
+        }
+
+       
+    }
+
+
+/*página perfil */
+
+.perfil {
+    height: 825px;
+}
+
+.perfil input::placeholder {
+    color: #737380;
+}
+
+.perfil .mensagem::placeholder{
+    color: #737380;   
+}
+
+.editar__perfil {
+    color: #FC7071;
+    display: block;
+    font-size: 12px;
+}
+
+.perfil__foto {
+    background-color: none;
+    border: none;
+    height: 80px; 
+    margin-top:20px ;
+    width: 80px;
+}
+
+.centraliza {
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+
+.centraliza p {
+    margin-top: 20px;
+}

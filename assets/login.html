@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adopet - Cadastro</title>
+    <title>Adopet - Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -13,6 +13,10 @@
 
 <body class=" forma__top">
     <header>
+         <picture class="header__ico">
+            <source srcset="img/Logo-branco-pequeno.svg" media="(min-width: 650px)" >
+            <img src="">
+        </picture>
         <button class="header__ico" aria-label="Home"><img src="img/Icone-casa.svg"></button>
         <button class="header__ico" aria-label="Contato"><img src="img/Icone-mensagens.svg"></button>
     </header>
@@ -29,9 +33,9 @@
 
     <div class="cadastro login">
         <p>Email</p>
-        <input type="email" name="email" value="" placeholder="Insira seu email" />
+        <input type="email" name="email" value="" placeholder="Insira seu email" class="input"/>
         <p>Senha</p>
-        <input type="password" name="senha" value="" placeholder="Insira sua senha" />
+        <input type="password" name="senha" value="" placeholder="Insira sua senha" class="input"/>
         <a class="esqueci__senha">Esqueci minha senha</a>
 
 

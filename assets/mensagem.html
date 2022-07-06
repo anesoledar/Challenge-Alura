@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopet - Mensagem</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class=" forma__top"></div>
+    <header>
+        <picture class="header__ico">
+            <source srcset="img/Logo-branco-pequeno.svg" media="(min-width: 650px)" >
+            <img src="">
+        </picture>
+    
+        <button class="header__ico" aria-label="Home"><img src="img/Icone-casa.svg"></button>
+        <button class="header__ico" aria-label="Contato"><img src="img/Icone-mensagens.svg"></button>
+    </header>
+
+    <button class="header__ico icone__perfil" aria-label="Perfil"><img src="img/Usuário.svg"></button>
+
+    <div class="chamada__sem__logo">
+        <p class="chamada__sem__logo">Envie uma mensagem para a pessoa ou instituição que está cuidando do animal</p>
+    </div>
+
+    <section class="container__mensagem">
+        <p class="titulo-azul">Nome</p>
+        <input type="text" name="Nome" value="" placeholder="Insira seu nome completo" class="mensagem__input input" />
+
+        <p class="titulo-azul">Telefone</p>
+        <input type="text" name="Telefone" value="" placeholder="Insira seu telefone e/ou Whatsapp" class="mensagem__input input" />
+
+        <p class="titulo-azul">Nome do animal</p>
+        <input type="text" name="Nome do animal" value="" placeholder="Por qual animal você se interessou?" class="mensagem__input input" />
+
+        <p class="titulo-azul">Mensagem</p>
+        <textarea name="Mensagem" placeholder="Escreva sua mensagem aqui" class="input mensagem"></textarea>
+       
+        <div class="alinha__botao">
+        <a href="perfil.html"><button class="botao botao__comum">Enviar</button></a>
+        </div>
+
+    </section>
+
+
+
+
+    <footer class="footer__mensagem">
+        <p>2022 - Desenvolvido por Alura</p>
+    </footer>
+        
+    </body>
+    </html>
