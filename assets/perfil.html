@@ -1,65 +1,89 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adopet - Perfil</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/style.css">
-</head>
 
-<body>
-    <div class=" forma__top"></div>
-    
-    
-    <header>
-        <picture class="header__ico">
-            <source srcset="img/Logo-branco-pequeno.svg" media="(min-width: 650px)" >
-            <img src="">
-        </picture>
+    <head>
 
-        <button class="header__ico" aria-label="Home"><img src="img/Icone-casa.svg"></button>
-        <button class="header__ico" aria-label="Contato"><img src="img/Icone-mensagens.svg"></button>
-    </header>
-
-    <button class="header__ico icone__perfil" aria-label="Perfil"><img src="img/foto-joana.png"></button>
-
-    <div class="chamada__sem__logo">
-        <p class="chamada__sem__logo">Envie uma mensagem para a pessoa ou instituição que está cuidando do animal</p>
-    </div>
-    <div class="forma__direita"></div>
-    <section class="container__mensagem perfil">
-        <p class="titulo-azul">Foto</p>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <div class="centraliza">
-        <button class="perfil__foto"aria-label="Perfil"><img src="img/foto-joana2.png"></button>
-        <p class="editar__perfil">Clique na foto para editar</p>
+        <title>Adopet - Perfil</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="CSS/style.css">
+
+    </head>
+
+    <body>
+
+        <div class=" forma__top"></div>
+    
+    
+        <header>
+
+            <picture class="header__ico">
+
+                <source srcset="img/Logo-branco-pequeno.svg" media="(min-width: 650px)">
+                <img src="">
+                
+            </picture>
+
+            <a href="home.html" class="header__ico" aria-label="Home"><img src="img/Icone-casa.svg"></a>
+            <a href="mensagem.html" class="header__ico" aria-label="Contato"><img src="img/Icone-mensagens.svg"></a>
+
+        </header>
+
+        <a class="header__ico icone__perfil" aria-label="Perfil"><img src="img/foto-usuários/foto-joana.png"></a>
+
+        <div class="chamada__sem__logo">
+
+            <p class="chamada__sem__logo">Envie uma mensagem para a pessoa ou instituição que está cuidando do animal</p>
+
         </div>
+        
+        <div class="forma__direita"></div>
+        
+        <section class="container__mensagem perfil">
+
+            <p class="titulo-azul">Foto</p>
+        
+            <div class="centraliza">
+
+                <button class="perfil__foto"aria-label="Perfil"><img src="img/foto-usuários/foto-joana2.png"></button>
+                <p class="editar__perfil">Clique na foto para editar</p>
+
+            </div>
        
-        <p class="titulo-azul">Nome</p>
-        <input type="text" name="Nome" value="" placeholder="Joana Magalhães" class="mensagem__input input"/>
-        <p class="titulo-azul">Telefone</p>
-        <input type="text" name="Telefone" value="" placeholder="55 11 XXXXXXXXX" class="mensagem__input input"/>
-        <p class="titulo-azul">Cidade</p>
-        <input type="text" name="Cidade" value="" placeholder="São Paulo" class="mensagem__input input" />
+            <p class="titulo-azul">Nome</p>
+            <input type="text" name="Nome" value="" placeholder="Joana Magalhães" class="mensagem__input input"/>
+            
+            <p class="titulo-azul">Telefone</p>
+            <input type="text" name="Telefone" value="" placeholder="55 11 XXXXXXXXX" class="mensagem__input input"/>
+            
+            <p class="titulo-azul">Cidade</p>
+            <input type="text" name="Cidade" value="" placeholder="São Paulo" class="mensagem__input input" />
+            
             <p class="titulo-azul">Sobre</p>
-        <textarea name="Sobre" placeholder="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." class="mensagem input"></textarea>
+            <textarea name="Sobre" placeholder="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." class="mensagem input"></textarea>
         
-        <div class="alinha__botao">
-        <a href="perfil.html"><button class="botao botao__comum">Salvar</button></a>
-        </div>
+            <div class="alinha__botao">
+                <button class="botao botao__comum">Salvar</button>
+            </div>
 
-    </section>
-
-
+        </section>
 
 
-    <footer class="footer__mensagem">
-        <p>2022 - Desenvolvido por Alura</p>
-    </footer>
+
+
+        <footer class="footer__mensagem">
+
+            <p>2022 - Desenvolvido por Alura</p>
+
+        </footer>
         
     </body>
-    </html>
+</html>

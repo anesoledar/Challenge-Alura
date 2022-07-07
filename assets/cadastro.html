@@ -1,54 +1,74 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adopet - Cadastro</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/style.css">
-</head>
 
-<body class=" forma__top">
-    <header>
-        <picture class="header__ico">
-            <source srcset="img/Logo-branco-pequeno.svg" media="(min-width: 650px)" >
-            <img src="">
-        </picture>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Adopet - Cadastro</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="CSS/style.css">
+
+    </head>
+
+    <body class="forma__top">
         
-        <button class="header__ico" aria-label="Home"><img src="img/Icone-casa.svg"></button>
-        <button class="header__ico" aria-label="Contato"><img src="img/Icone-mensagens.svg"></button>
-    </header>
+        <header>
 
-    <div class="decoracao__patinhas"></div>
+            <picture class="header__ico">
 
-    <section class="logo logo-azul">
-        <img src="img/Logo-azul.svg" alt="Logotipo da Adopet">
-    </section>
+                <source srcset="img/Logo-branco-pequeno.svg" media="(min-width: 650px)">
+                <img src="">
+                
+            </picture>
 
-    <p class="texto__chamadas chamada__cadastroLogin">Ainda não tem cadastro?</p>
-    <p class="texto__chamadas chamada__cadastroLogin">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
+            <a href="home.html" class="header__ico" aria-label="Home"><img src="img/Icone-casa.svg"></a>
+            <a href="mensagem.html" class="header__ico" aria-label="Contato"><img src="img/Icone-mensagens.svg"></a>
 
-    <div class="cadastro">
-        <p>Email</p>
-        <input type="email" name="email" value="" placeholder="Escolha seu melhor email" class="input"/>
-        <p>Nome</p>
-        <input type="text" name="nome" value="" placeholder="Digite seu nome completo" class="input" />
-        <p>Senha</p>
-        <input type="password" name="senha" value="" placeholder="Crie uma senha" class="input"/>
-        <p>Confirmar sua Senha</p>
-        <input type="password" name="confirmar-senha" value="" placeholder="Repita a senha criada acima" class="input" />
+        </header>
 
-        <a href="login.html"><button class="botao botao__comum">Cadastrar</button></a>
-    </div>
+        <div class="decoracao__patinhas"></div>
+
+        <section class="logo logo-azul">
+            <img src="img/Logo-azul.svg" alt="Logotipo da Adopet">
+        </section>
+
+        <p class="texto__chamadas chamada__cadastroLogin">Ainda não tem cadastro?</p>
+        <p class="texto__chamadas chamada__cadastroLogin">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
+
+        <div class="cadastro">
+
+            <p>Email</p>
+            <input type="email" name="email" value="" placeholder="Escolha seu melhor email" class="input"/>
+
+            <p>Nome</p>
+            <input type="text" name="nome" value="" placeholder="Digite seu nome completo" class="input" />
+
+            <p>Senha</p>
+            <input type="password" name="senha" value="" placeholder="Crie uma senha" class="input"/>
+
+            <p>Confirmar sua Senha</p>
+            <input type="password" name="confirmar-senha" value="" placeholder="Repita a senha criada acima" class="input" />
+
+            <a href="login.html"><button class="botao botao__comum">Cadastrar</button></a>
+
+        </div>
 
 
 
-    <footer>
-        <p>2022 - Desenvolvido por Alura</p>
-    </footer>
+        <footer>
+
+            <p>2022 - Desenvolvido por Alura</p>
+
+        </footer>
     
-</body>
+    </body>
+
 </html>

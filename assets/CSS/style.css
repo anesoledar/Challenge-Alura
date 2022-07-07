@@ -1,21 +1,24 @@
-/* CSS comum a todas as páginas */
+/* Base CSS */
 *{
+    background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     text-decoration: none;
-    background-repeat: no-repeat;
+    
 }
+
 body{
     width: 100vw;
+    
 }
 
 .forma__top {
     background-image: url(../img/Forma-cima.svg);
     background-size: 90vw;
-    top: 0;
-    position: absolute;
     height: 600px;
+    position: absolute;
+    top: 0;
     width:100%;
     
 }
@@ -23,38 +26,36 @@ body{
 header {
     align-items: center;
     display: flex;
-    height: 15vh;
-    justify-content:left;
-    width: 40%;
-    position: absolute;
-    z-index: 2;
+    height: auto;
+    position:absolute;
     top: 0;
+   
 }
 
 .header__ico {
     background: none;
     border: none;
     padding: 6vw 5vw 0 5vw;
-
-  
+ 
 }
 
 .logo {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .texto__chamadas {
     font-size: 16px;
     text-align: center;
     color: #3772FF;
+
 }
 
 .botao {
-
-    background-color: #FC7071;
     border: #FC7071;
+    background-color: #FC7071;
     border-radius: 6px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     color: #fff;
@@ -70,8 +71,6 @@ footer {
     display: flex;
     height: 100px;
     justify-content: center;
-    margin: 0;
-    align-self:baseline;
     width: 100%;
   }
 
@@ -80,11 +79,11 @@ footer p {
 }
 
 .input {
-    border-radius: 6px;
     border: none;
+    border-radius: 6px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
-    width: 80%;
     height: 3em;
+    width: 80%;
 }
 
 .input::placeholder {
@@ -93,8 +92,8 @@ footer p {
 
 .titulo-azul {
     color:#3772FF;
-    font-weight: 600;
     font-size: 16px;
+    font-weight: 600;
 }
 
 @media screen and (min-width: 650px) {
@@ -103,45 +102,67 @@ footer p {
         
     }
 
+    
 
 
     }
-/* CSS da página Inicial */
+
+@media screen and (min-width: 1200px) {
+    .forma__top {
+        background-size: 43vw;     
+    }
+    .header {
+      
+    }
+    
+    .header__ico {
+        padding: 5vh 0 2vh 8vw;
+        
+
+    }
+
+}
+/* Página Inicial */
 
 .inicial__body { 
     background-color: #3772FF;
+
 }
 
 .inicial__logo {
     margin: 40% auto 10% auto;
+
 }
 
 .inicial__conteudo {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 600px;
     align-items: center;
-    color: #fff;
     background-image: url(../img/Forma-direita.svg);
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: -7%;
-    position: absolute;   
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    position: absolute;  
+    width: 100vw; 
+
 }
 
-.inicial__conteudo h3 {
+.inicial__conteudo h2 {
     font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 500;
     font-size: 26px;
+    font-weight: 500;
     line-height: 24px;
     margin-bottom: 1.5em;
+
 }
 
 .inicial__conteudo p {
-    width: 65vw;
-    height: 6em;
     color:#fff;
+    height: 6em;
+    width: 65vw;
+
 }
 
 .inicial__conteudo-botoes {
@@ -153,50 +174,65 @@ footer p {
     width: 50vw;
 }
 
-.inicial__conteudo-botoes button  {   
-    width: 50vw;
+.inicial__botao  {
     margin-bottom: 20px;
-    padding: 5%; 
+    padding: 5%;
+    text-align: center;   
+    width: 50vw;
+
 }
 
 .inicial__decoracao {
-    margin-top: ;
     background-image: url(../img/Inicial-ilustração.svg);
     background-position-x: 40%;
     background-position-y: 110% ;
     height: 600px;
+   
+
 }
 @media screen and (min-width: 650px) {
 
     .inicial__conteudo p {
-        width: 47vw;
         font-size: 18px;
+        width: 47vw;
+
     }
-    .inicial__conteudo h3 {
+
+    .inicial__conteudo h2 {
         font-size:28px ;
+
     }
+
     .inicial__decoracao {
-        height: 650px;
         background-position-x: 45%;
         background-position-y: 105% ;
+        height: 650px;
+
     }
+
     .inicial__conteudo {
         height: 600px;
+
+    }
+
+    .inicial__conteudo-botoes {
+        width: 47vw ;
+
     }
     
 }
 
-/* CSS comum ás páginas Cadastro e Login */
+/* Base Cadastro e Login */
 
 .logo-azul img{
-    width: 35%;
     margin: 40% auto 10% auto;
+    width: 35%;
+
 }
 
 .decoracao__patinhas {  
     background-image: url(../img/Patas.svg);
-    background-repeat: no-repeat;
-    background-position-x: right;
+    background-position-x: right;  
     position: absolute;
     height: 60%;
     width: 100%;  
@@ -215,28 +251,34 @@ footer p {
     display: flex;
     flex-direction: column;
     height: 500px;
+
 }
 
 .cadastro p {
     margin-top: 1em;
     margin-bottom: 5px;
+
 }
 
 .cadastro input {
     background-color: #F7F7F7;
     height: 3em;
-    text-align: center;      
+    text-align: center; 
+
 }
 
 
 .botao__comum {
     width: 10em;
     padding: 0.5em 0 0.5em 0;
-    margin: 20px;   
+    margin: 20px;
+
 }
+
 @media screen and (min-width: 650px) {
     .input {
         width: 50vw;
+
     }
 
     .cadastro {
@@ -246,23 +288,28 @@ footer p {
         background-size: 12vw; 
 
     }
+
     .chamada__cadastroLogin {
      width: 68%;
+
     }
 }
 
-/* CSS página Login */
+/* Login */
 
 .chamada__login {
     height: 100px;
+
 }
 
 .chamada__login p {
     padding-top: 20px;
+
 }
 
 .login {
     height: 500px;
+
 }
 
 .esqueci__senha {
@@ -271,42 +318,59 @@ footer p {
 
 }
 
-/* CSS da página Home */
+/* Base Home, Mensagem e Perfil */
+
+.icone__perfil {
+    position: absolute;
+    right: 10vw;
+    top: 0vh;
+        
+ }
+
 .chamada__sem__logo {
-    width: 80%;
-    margin: 40% auto 8% auto;
-    font-size: 16px;
     color:#3772FF;
+    font-size: 16px;
+    margin: 40% auto 8% auto;
     text-align: center;
-   
+    width: 80%;
 }
+ @media screen and (min-width: 1200px) {
+    .chamada__sem__logo {
+        margin: 20% auto 5% auto;
+    }
+
+
+
+ }
+
+
+
+
+/* Home */
+
 
 .sessao__de__cards {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-   
 
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
 }
 
 .cartao {
     background-color: #F7F7F7;;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 10px 0 10px 0;
+    margin: 5px auto;
     padding: 10px 0;
-    width: 100%;
+    width: 344px;
  
-
 }
 
 .cartao__conteudo {
-    display: grid;
     color: #737380;
+    display: grid;
     padding: 10px;
-
-
    
 }
 
@@ -315,8 +379,9 @@ footer p {
 }
 
 .cartao__img {
-    width: 40vw;
     padding: 10%;
+    width: 148px;
+    height: 148px;
     
 }
 
@@ -325,29 +390,23 @@ footer p {
 }
 
 .cartao__falar__com {
-    font-size: 10px;
-    display: flex;
     align-items:flex-start;
-
+    display: flex;
+    font-size: 10px;
   
 }
-.cartao__botao__mensagem {
-    display: inline;
-    border: none;
+.cartao__botao__mensagem {   
     background-color: #F7F7F7;
+    border: none;
+    display: inline;
     padding-right: 5px;
 }
 
-/* Comum às páginas Home, Mensagem e Perfil */
 
-.icone__perfil {
-   right: 10vw;
-   top: 3vh;
-   position: absolute;
-   
-}
 
-/* Comum às páginas Mensagem e Perfil */
+
+
+/* Base Mensagem e Perfil */
 
 .container__mensagem {
     background-color: #F7F7F7;
@@ -382,7 +441,7 @@ footer p {
     padding: 5%;
     text-align: start;
     width: 85%;
-  }
+}
 
 
 .alinha__botao {
@@ -401,7 +460,6 @@ footer p {
             height: 900px;
         position:absolute;
         background-image: url(../img/Forma-direita.svg);
-        background-repeat: no-repeat;
         background-position: right;
         background-size: 15vw;
         
@@ -417,7 +475,7 @@ footer p {
     }
 
 
-/*página perfil */
+/* Perfil */
 
 .perfil {
     height: 825px;
