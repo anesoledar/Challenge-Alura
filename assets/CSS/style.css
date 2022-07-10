@@ -1,3 +1,19 @@
+:root {
+    --azul: #3772FF;
+    --branco: #fff;
+    --cinza-claro: #F7F7F7;
+    --cinza: #BCBCBC;
+    --cinza-escuro: #737380;
+    --salmao: #FC7071;
+    --verde-caribe: #36D6AD;
+    --shadow-botao:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    --shadow-input:0px 2px 4px rgba(0, 0, 0, 0.15);
+    --direita: url(../img/Forma-direita.svg);
+    --esquerda: url(../img/Forma-esquerda.svg);
+
+}
+
+
 /* Base CSS */
 *{
     background-repeat: no-repeat;
@@ -21,6 +37,29 @@ body{
     top: 0;
     width:100%;
     
+}
+
+.forma__mobile {
+    height: 50vh;
+    width: 100vw;
+    position: absolute;
+    background-image: var(--direita);
+    background-position-x:right;
+
+    
+    
+
+}
+
+.forma__esquerda {
+    background-image: var(--esquerda);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-position-x:left;
+    background-position-y: 75%;
+    z-index: -1;
+
 }
 
 header {
@@ -49,16 +88,16 @@ header {
 .texto__chamadas {
     font-size: 16px;
     text-align: center;
-    color: #3772FF;
+    color: var(--azul);
 
 }
 
 .botao {
-    border: #FC7071;
-    background-color: #FC7071;
+    border: var(--salmao);
+    background-color: var(--salmao);
     border-radius: 6px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    color: #fff;
+    box-shadow: var(--shadow-botao);
+    color: var(--branco);
     font-size: 16px ;
     font-weight: 600;
     height: auto;
@@ -67,7 +106,7 @@ header {
 
 footer {
     align-items: center;
-    background-color: #36D6AD; 
+    background-color: var(--verde-caribe); 
     display: flex;
     height: 100px;
     justify-content: center;
@@ -75,23 +114,23 @@ footer {
   }
 
 footer p {
-    color: #fff;
+    color: var(--branco);
 }
 
 .input {
     border: none;
     border-radius: 6px;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow-input);
     height: 3em;
     width: 80%;
 }
 
 .input::placeholder {
-    color: #BCBCBC;;
+    color: var(--cinza);
   }
 
 .titulo-azul {
-    color:#3772FF;
+    color: var(--azul);
     font-size: 16px;
     font-weight: 600;
 }
@@ -102,17 +141,18 @@ footer p {
         
     }
 
-    
-
+    .forma__centro {
 
     }
+    
+    input {
+        height: 3em;
+    }
 
+}
 @media screen and (min-width: 1200px) {
     .forma__top {
         background-size: 43vw;     
-    }
-    .header {
-      
     }
     
     .header__ico {
@@ -122,10 +162,11 @@ footer p {
     }
 
 }
+
 /* Página Inicial */
 
 .inicial__body { 
-    background-color: #3772FF;
+    background-color: var(--azul);
 
 }
 
@@ -136,11 +177,7 @@ footer p {
 
 .inicial__conteudo {
     align-items: center;
-    background-image: url(../img/Forma-direita.svg);
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: -7%;
-    color: #fff;
+    color: var(--branco);
     display: flex;
     flex-direction: column;
     height: 600px;
@@ -159,7 +196,7 @@ footer p {
 }
 
 .inicial__conteudo p {
-    color:#fff;
+    color:var(--branco);
     height: 6em;
     width: 65vw;
 
@@ -244,34 +281,31 @@ footer p {
     
 }
 
-.cadastro {
+.cadastro__caixa {
     align-items: center;
-    background-image: url(../img/Forma-esquerda.svg);
-    background-position-y: 5vh;  
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 480px;
 
 }
 
-.cadastro p {
+.cadastro__caixa p {
     margin-top: 1em;
     margin-bottom: 5px;
 
 }
 
-.cadastro input {
-    background-color: #F7F7F7;
-    height: 3em;
+.cadastro__caixa input {
+    background-color: var(--cinza-claro);
     text-align: center; 
 
 }
-
 
 .botao__comum {
     width: 10em;
     padding: 0.5em 0 0.5em 0;
     margin: 20px;
+
 
 }
 
@@ -281,16 +315,8 @@ footer p {
 
     }
 
-    .cadastro {
-        background-image: url(../img/Forma-direita.svg);
-        background-position: right;
-        background-position-y: -2vh;
-        background-size: 12vw; 
-
-    }
-
     .chamada__cadastroLogin {
-     width: 68%;
+        width: 68%;
 
     }
 }
@@ -313,8 +339,8 @@ footer p {
 }
 
 .esqueci__senha {
- color: #FC7071;
- margin: 1em auto 2em auto;
+    color: var(--salmao);
+    margin: 1em auto 2em auto;
 
 }
 
@@ -328,13 +354,13 @@ footer p {
  }
 
 .chamada__sem__logo {
-    color:#3772FF;
+    color:var(--azul);
     font-size: 16px;
     margin: 40% auto 8% auto;
     text-align: center;
     width: 80%;
 }
- @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .chamada__sem__logo {
         margin: 20% auto 5% auto;
     }
@@ -358,7 +384,7 @@ footer p {
 }
 
 .cartao {
-    background-color: #F7F7F7;;
+    background-color: var(--cinza-claro);;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 5px auto;
@@ -368,7 +394,7 @@ footer p {
 }
 
 .cartao__conteudo {
-    color: #737380;
+    color: var(--cinza-escuro);
     display: grid;
     padding: 10px;
    
@@ -396,7 +422,7 @@ footer p {
   
 }
 .cartao__botao__mensagem {   
-    background-color: #F7F7F7;
+    background-color: var(--cinza-claro);
     border: none;
     display: inline;
     padding-right: 5px;
@@ -409,9 +435,9 @@ footer p {
 /* Base Mensagem e Perfil */
 
 .container__mensagem {
-    background-color: #F7F7F7;
+    background-color: var(--cinza-claro);
     border-radius: 6px;  
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow-input);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -421,21 +447,23 @@ footer p {
     width: 80%;  
 
 }
+
 .mensagem__input {
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow-input);
     margin: 5% auto 5% auto; 
     mix-blend-mode: normal;
     padding-left: 5%;
     text-align: start;
     width: 85%;
+    border: none;
     }
 
 .container__mensagem input::placeholder{
-    color: #BCBCBC;
+    color: var(--cinza);
 }
 
 .mensagem  {
-    color: #BCBCBC;
+    color: var(--cinza);
     height: 12em;
     margin: 5% auto 5% auto;
     padding: 5%;
@@ -445,31 +473,36 @@ footer p {
 
 
 .alinha__botao {
-    width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 8px;
 }
+
 .enviar__mensagem button {
     margin: auto;}
 
-    @media screen and (min-width: 650px) {
-        .forma__direita{
+@media screen and (min-width: 650px) {
+    .forma__direita{
         top: 25vh;
-            width: 100%;
-            height: 900px;
+        width: 100%;
+        
         position:absolute;
         background-image: url(../img/Forma-direita.svg);
         background-position: right;
         background-size: 15vw;
         
-       }
+    }
        
-        
-        .container__mensagem {
-            width: 60%;
-           
-        }
+    .mensagem__input {
+        padding: 2.5% 0 2.5% 5%
+    }
+    .container__mensagem {
+        width: 60%;
+       
+    }
+    .alinha__botao {
+        margin-bottom: 15px;
+    }
 
        
     }
@@ -482,15 +515,15 @@ footer p {
 }
 
 .perfil input::placeholder {
-    color: #737380;
+    color: var(--cinza-escuro);
 }
 
 .perfil .mensagem::placeholder{
-    color: #737380;   
+    color: var(--cinza-escuro);   
 }
 
 .editar__perfil {
-    color: #FC7071;
+    color: var(--salmao);
     display: block;
     font-size: 12px;
 }
